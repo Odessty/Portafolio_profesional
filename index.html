@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!--nav bar-->
     <nav class="navbar navbar-expand-lg sticky-top site-nav">
       <div class="container">
         <a class="navbar-brand fw-bold" href="#hero">Sebastián Medina</a>
@@ -28,7 +29,7 @@
         </div>
       </div>
     </nav>
-
+    <!--hero section, ocupado por nombre y seleccion hacia proyectos y descarda de CV-->
     <header id="hero" class="d-flex align-items-center hero">
       <div class="container">
         <div class="row align-items-center g-5">
@@ -40,11 +41,12 @@
             </p>
             <div class="d-flex gap-3 flex-wrap">
               <a href="#proyectos" class="btn btn-accent btn-lg">Ver proyectos</a>
-              <a href="assets/cv_sebastian_medina.pdf" download="CV_Sebastian_Medina.pdf" class="btn btn-outline-accent btn-lg">
+              <a href="assets/CV_Sebastian_Medina.pdf" download="CV_Sebastian_Medina.pdf" class="btn btn-outline-accent btn-lg">
                 <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar CV
               </a>
             </div>
           </div>
+          <!--terminal de presentacion-->
           <div class="col-12 col-lg-6">
             <div class="terminal" aria-label="Terminal con datos de Sebastián">
               <div class="terminal-bar"><span></span><span></span><span></span></div>
@@ -52,9 +54,9 @@
                 <div class="t-line" style="--n:8;--d:.4s"><span class="p">$</span> whoami</div>
                 <div class="t-line out" style="--n:16;--d:1.4s">sebastian-medina</div>
                 <div class="t-line" style="--n:15;--d:2.4s"><span class="p">$</span> echo $SISTEMA</div>
-                <div class="t-line out" style="--n:20;--d:3.4s">arch linux (omarchy)</div>
+                <div class="t-line out" style="--n:20;--d:3.4s">arch linux / windows</div>
                 <div class="t-line" style="--n:15;--d:4.4s"><span class="p">$</span> ls proyectos/</div>
-                <div class="t-line out" style="--n:38;--d:5.4s">pos  crud-estudiantes  infijo-postfijo</div>
+                <div class="t-line out" style="--n:38;--d:5.4s">Sistema_de_inventario<br>  Juego_interactivo <br> Sistema_de_ventas</div>
               </div>
             </div>
           </div>
@@ -71,10 +73,10 @@
             <article class="card h-100 project">
               <div class="project-img"><i class="bi bi-cart-check"></i></div>
               <div class="card-body d-flex flex-column">
-                <h3 class="h5 card-title">Sistema de punto de venta (POS)</h3>
+                <h3 class="h5 card-title">Sistema de inventario</h3>
                 <p class="card-text text-body-secondary">Aplicación para registrar ventas, productos y clientes, con cálculo automático de totales y control de inventario.</p>
-                <div class="mb-3 d-flex flex-wrap gap-2"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">JavaScript</span></div>
-                <a href="https://github.com/Odessty/pos" target="_blank" rel="noopener" class="btn btn-outline-accent mt-auto"><i class="bi bi-github me-2"></i>Ver repositorio</a>
+                <div class="mb-3 d-flex flex-wrap gap-2"><span class="tag">Python</span><span class="tag">MySQL</span><span class="tag">Power-Bi</span></div>
+                <a href="https://github.com/Odessty/29022_G6_MET_DES_SW.git" target="_blank" rel="noopener" class="btn btn-outline-accent mt-auto"><i class="bi bi-github me-2"></i>Ver repositorio</a>
               </div>
             </article>
           </div>
@@ -82,10 +84,10 @@
             <article class="card h-100 project">
               <div class="project-img"><i class="bi bi-database-gear"></i></div>
               <div class="card-body d-flex flex-column">
-                <h3 class="h5 card-title">CRUD de gestión de estudiantes</h3>
-                <p class="card-text text-body-secondary">Módulo para crear, consultar, actualizar y eliminar registros, con formularios validados y conexión a base de datos.</p>
+                <h3 class="h5 card-title">Juego interactivo para niños</h3>
+                <p class="card-text text-body-secondary">Juego interactivo que permite un mejor desarrollo cognitivo para niños usando formas y matemáticas simples.</p>
                 <div class="mb-3 d-flex flex-wrap gap-2"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Bootstrap</span></div>
-                <a href="https://github.com/Odessty/crud-estudiantes" target="_blank" rel="noopener" class="btn btn-outline-accent mt-auto"><i class="bi bi-github me-2"></i>Ver repositorio</a>
+                <a href="https://github.com/Odessty/JuegoInteractivo.git" target="_blank" rel="noopener" class="btn btn-outline-accent mt-auto"><i class="bi bi-github me-2"></i>Ver repositorio</a>
               </div>
             </article>
           </div>
@@ -93,10 +95,10 @@
             <article class="card h-100 project">
               <div class="project-img"><i class="bi bi-diagram-3"></i></div>
               <div class="card-body d-flex flex-column">
-                <h3 class="h5 card-title">Conversor infijo a postfijo</h3>
-                <p class="card-text text-body-secondary">Convierte expresiones matemáticas de notación infija a postfija usando pilas. Práctica de Estructuras de Datos.</p>
-                <div class="mb-3 d-flex flex-wrap gap-2"><span class="tag">C++</span><span class="tag">Python</span></div>
-                <a href="https://github.com/Odessty/infijo-postfijo" target="_blank" rel="noopener" class="btn btn-outline-accent mt-auto"><i class="bi bi-github me-2"></i>Ver repositorio</a>
+                <h3 class="h5 card-title">Sistema de ventas </h3>
+                <p class="card-text text-body-secondary">Aplicación desarrollada para el manejo de compra y venta de productos, usando una interfaz interactiva e incluyendo funcionalidades como la generación de facturas. </p>
+                <div class="mb-3 d-flex flex-wrap gap-2"><span class="tag">TypeScript</span><span class="tag">html</span><span class="tag">React</span></div>
+                <a href="https://github.com/Odessty/mi-tiendita.git" target="_blank" rel="noopener" class="btn btn-outline-accent mt-auto"><i class="bi bi-github me-2"></i>Ver repositorio</a>
               </div>
             </article>
           </div>
@@ -122,14 +124,28 @@
               <div class="d-flex justify-content-between mb-1"><span class="fw-semibold">JavaScript</span><span class="text-body-secondary">75%</span></div>
               <div class="progress" role="progressbar" aria-label="JavaScript" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" data-valor="75" style="width:0%"></div></div>
             </div>
+            
             <div class="mb-4">
               <div class="d-flex justify-content-between mb-1"><span class="fw-semibold">PHP</span><span class="text-body-secondary">70%</span></div>
               <div class="progress" role="progressbar" aria-label="PHP" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" data-valor="70" style="width:0%"></div></div>
             </div>
-            <div>
-              <div class="d-flex justify-content-between mb-1"><span class="fw-semibold">MySQL</span><span class="text-body-secondary">70%</span></div>
-              <div class="progress" role="progressbar" aria-label="MySQL" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" data-valor="70" style="width:0%"></div></div>
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-1"><span class="fw-semibold">C++</span><span class="text-body-secondary">65%</span></div>
+              <div class="progress" role="progressbar" aria-label="PHP" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" data-valor="65" style="width:0%"></div></div>
             </div>
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-1"><span class="fw-semibold">Python</span><span class="text-body-secondary">90%</span></div>
+              <div class="progress" role="progressbar" aria-label="PHP" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" data-valor="90" style="width:0%"></div></div>
+            </div>
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-1"><span class="fw-semibold">Java</span><span class="text-body-secondary">40%</span></div>
+              <div class="progress" role="progressbar" aria-label="PHP" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" data-valor="40" style="width:0%"></div></div>
+            </div>
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-1"><span class="fw-semibold">Bash</span><span class="text-body-secondary">70%</span></div>
+              <div class="progress" role="progressbar" aria-label="PHP" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" data-valor="70" style="width:0%"></div></div>
+            </div>
+            
           </div>
           <div class="col-12 col-lg-6">
             <h3 class="h5 mb-3"><i class="bi bi-tools me-2 text-accent"></i>Herramientas y redes</h3>
@@ -190,7 +206,7 @@
         <div class="d-flex justify-content-center gap-4 mb-3 fs-4">
           <a href="https://github.com/Odessty" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
           <a href="https://linkedin.com/in/TU-PERFIL" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-          <a href="mailto:tu-correo@ejemplo.com" aria-label="Correo"><i class="bi bi-envelope"></i></a>
+          <a href="semedinacruz@gmail.com" aria-label="Correo"><i class="bi bi-envelope"></i></a>
         </div>
         <p class="mb-0 text-body-secondary">&copy; 2026 Sebastián Medina. Todos los derechos reservados.</p>
       </div>
