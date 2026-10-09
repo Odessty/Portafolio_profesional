@@ -1,301 +1,202 @@
 <!doctype html>
-<html>
+<html lang="es" data-bs-theme="dark">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Portafolio | Sebastian Medina</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--CSS de bootstrap desde CDN-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Iconos de Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <!-- Estilos personalizados -->
+    <title>Portafolio | Sebastián Medina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body class="bg-light">
-    <!--navegacion parte superior-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top site-nav">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">portafolio</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
+        <a class="navbar-brand fw-bold" href="#hero">Sebastián Medina</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Abrir menú">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#hero">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#proyectos">Proyectos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Habilidades</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <!--hero section con flexbox para centrado-->
-    <header
-      id="hero"
-      class="d-flex align-items-center min-vh-100 bg-primary text-white text-center py-5"
-    >
+
+    <header id="hero" class="d-flex align-items-center hero">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8 col-lg-6">
-            <!-- Imagen circular de perfil -->
-            <img
-              src="assets/profile.jpg"
-              alt="Foto de Sebastián Medina"
-              class="rounded-circle img-fluid mb-4 shadow"
-              style="width: 180px; height: 180px; object-fit: cover"
-            />
-
-            <h1 class="display-4 fw-bold">Sebastián Medina</h1>
-            <p class="lead mb-4">
-              Estudiante de Ingeniería en TI | Desarrollador Software Junior |
-              Aficionado de la ciberseguridad
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-6">
+            <img src="assets/profile.jpg" alt="Foto de Sebastián Medina" class="rounded-circle mb-4 avatar" />
+            <h1 class="display-4 fw-bold mb-3">Sebastián Medina</h1>
+            <p class="lead text-body-secondary mb-4">
+              Estudiante de Ingeniería en TI, desarrollador de software junior y aficionado a la ciberseguridad.
             </p>
-
-            <!-- Botones de llamada a la acción con Flexbox -->
-            <div class="d-flex justify-content-center gap-3 flex-wrap">
-              <a
-                href="#proyectos"
-                class="btn btn-light btn-lg fw-semibold shadow-sm"
-                >Ver Proyectos</a
-              >
-              <!-- Botón para descargar el CV almacenado en /assets/ -->
-              <a
-                href="assets/cv_sebastian_medina.pdf"
-                download="CV_Sebastian_Medina.pdf"
-                class="btn btn-outline-light btn-lg fw-semibold shadow-sm"
-              >
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="#proyectos" class="btn btn-accent btn-lg">Ver proyectos</a>
+              <a href="assets/cv_sebastian_medina.pdf" download="CV_Sebastian_Medina.pdf" class="btn btn-outline-accent btn-lg">
                 <i class="bi bi-file-earmark-pdf-fill me-2"></i>Descargar CV
               </a>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="terminal" aria-label="Terminal con datos de Sebastián">
+              <div class="terminal-bar"><span></span><span></span><span></span></div>
+              <div class="terminal-body">
+                <div class="t-line" style="--n:8;--d:.4s"><span class="p">$</span> whoami</div>
+                <div class="t-line out" style="--n:16;--d:1.4s">sebastian-medina</div>
+                <div class="t-line" style="--n:15;--d:2.4s"><span class="p">$</span> echo $SISTEMA</div>
+                <div class="t-line out" style="--n:20;--d:3.4s">arch linux (omarchy)</div>
+                <div class="t-line" style="--n:15;--d:4.4s"><span class="p">$</span> ls proyectos/</div>
+                <div class="t-line out" style="--n:38;--d:5.4s">pos  crud-estudiantes  infijo-postfijo</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <!-- Sección de Portafolio de Proyectos -->
-    <section id="proyectos" class="py-5">
-      <div class="container">
-        <!-- Título de la sección -->
-        <h2 class="text-center mb-5 fw-bold text-primary">
-          Proyectos Destacados
-        </h2>
 
-       <!-- PORTAFOLIO DE PROYECTOS -->
-    <section id="proyectos" class="py-5">
+    <section id="proyectos" class="section">
       <div class="container">
-        <h2 class="text-center fw-bold mb-2">Portafolio de Proyectos</h2>
-        <p class="text-center text-muted mb-5">Algunos de los proyectos que he desarrollado durante mi formación.</p>
+        <h2 class="section-title">Proyectos</h2>
+        <p class="section-sub">Algunos de los proyectos que he desarrollado durante mi formación.</p>
         <div class="row g-4">
-
           <div class="col-12 col-md-4">
-            <div class="card h-100 shadow-sm tarjeta">
-              <div class="card-img-top proyecto-img bg-primary"><i class="bi bi-cart-check"></i></div>
+            <article class="card h-100 project">
+              <div class="project-img"><i class="bi bi-cart-check"></i></div>
               <div class="card-body d-flex flex-column">
-                <h3 class="h5 card-title">Sistema de Punto de Venta (POS)</h3>
-                <p class="card-text">Aplicación para registrar ventas, productos y clientes, con cálculo automático de totales y control de inventario.</p>
-                <div class="mb-3">
-                  <span class="badge text-bg-primary">PHP</span>
-                  <span class="badge text-bg-info">MySQL</span>
-                  <span class="badge text-bg-warning">JavaScript</span>
-                </div>
-                <a href="https://github.com/TU-USUARIO/pos" target="_blank" rel="noopener" class="btn btn-outline-dark mt-auto"><i class="bi bi-github me-2"></i>Ver repositorio</a>
+                <h3 class="h5 card-title">Sistema de punto de venta (POS)</h3>
+                <p class="card-text text-body-secondary">Aplicación para registrar ventas, productos y clientes, con cálculo automático de totales y control de inventario.</p>
+                <div class="mb-3 d-flex flex-wrap gap-2"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">JavaScript</span></div>
+                <a href="https://github.com/Odessty/pos" target="_blank" rel="noopener" class="btn btn-outline-accent mt-auto"><i class="bi bi-github me-2"></i>Ver repositorio</a>
               </div>
-            </div>
+            </article>
           </div>
-
           <div class="col-12 col-md-4">
-            <div class="card h-100 shadow-sm tarjeta">
-              <div class="card-img-top proyecto-img bg-success"><i class="bi bi-database-gear"></i></div>
+            <article class="card h-100 project">
+              <div class="project-img"><i class="bi bi-database-gear"></i></div>
               <div class="card-body d-flex flex-column">
-                <h3 class="h5 card-title">CRUD de Gestión de Estudiantes</h3>
-                <p class="card-text">Módulo para crear, consultar, actualizar y eliminar registros, con formularios validados y conexión a base de datos.</p>
-                <div class="mb-3">
-                  <span class="badge text-bg-primary">PHP</span>
-                  <span class="badge text-bg-info">MySQL</span>
-                  <span class="badge text-bg-secondary">Bootstrap</span>
-                </div>
-                <a href="https://github.com/TU-USUARIO/crud-estudiantes" target="_blank" rel="noopener" class="btn btn-outline-dark mt-auto"><i class="bi bi-github me-2"></i>Ver repositorio</a>
+                <h3 class="h5 card-title">CRUD de gestión de estudiantes</h3>
+                <p class="card-text text-body-secondary">Módulo para crear, consultar, actualizar y eliminar registros, con formularios validados y conexión a base de datos.</p>
+                <div class="mb-3 d-flex flex-wrap gap-2"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Bootstrap</span></div>
+                <a href="https://github.com/Odessty/crud-estudiantes" target="_blank" rel="noopener" class="btn btn-outline-accent mt-auto"><i class="bi bi-github me-2"></i>Ver repositorio</a>
               </div>
-            </div>
+            </article>
           </div>
-
           <div class="col-12 col-md-4">
-            <div class="card h-100 shadow-sm tarjeta">
-              <div class="card-img-top proyecto-img bg-danger"><i class="bi bi-diagram-3"></i></div>
+            <article class="card h-100 project">
+              <div class="project-img"><i class="bi bi-diagram-3"></i></div>
               <div class="card-body d-flex flex-column">
-                <h3 class="h5 card-title">Conversor Infijo a Postfijo</h3>
-                <p class="card-text">Programa que convierte expresiones matemáticas de notación infija a postfija usando pilas, desarrollado como práctica de Estructuras de Datos.</p>
-                <div class="mb-3">
-                  <span class="badge text-bg-dark">C++</span>
-                  <span class="badge text-bg-success">Python</span>
-                </div>
-                <a href="https://github.com/TU-USUARIO/infijo-postfijo" target="_blank" rel="noopener" class="btn btn-outline-dark mt-auto"><i class="bi bi-github me-2"></i>Ver repositorio</a>
+                <h3 class="h5 card-title">Conversor infijo a postfijo</h3>
+                <p class="card-text text-body-secondary">Convierte expresiones matemáticas de notación infija a postfija usando pilas. Práctica de Estructuras de Datos.</p>
+                <div class="mb-3 d-flex flex-wrap gap-2"><span class="tag">C++</span><span class="tag">Python</span></div>
+                <a href="https://github.com/Odessty/infijo-postfijo" target="_blank" rel="noopener" class="btn btn-outline-accent mt-auto"><i class="bi bi-github me-2"></i>Ver repositorio</a>
               </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <!-- Sección de Habilidades Técnicas -->
-    <section id="skills" class="py-5 bg-white">
-      <div class="container">
-        <!-- Título principal de la sección -->
-        <h2 class="text-center mb-5 fw-bold text-primary">Habilidades Técnicas</h2>
-
-        <div class="row g-4 justify-content-center">
-         <!-- HABILIDADES TECNICAS -->
-    <section id="skills" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center fw-bold mb-2">Habilidades Técnicas</h2>
-        <p class="text-center text-muted mb-5">Nivel de dominio en las tecnologías que utilizo.</p>
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8 col-lg-6" id="listaSkills">
-
-            <div class="mb-4">
-              <div class="d-flex justify-content-between"><span class="fw-semibold">HTML</span><span>90%</span></div>
-              <div class="progress" role="progressbar" aria-label="HTML" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-danger" data-valor="90" style="width:0%"></div>
-              </div>
-            </div>
-
-            <div class="mb-4">
-              <div class="d-flex justify-content-between"><span class="fw-semibold">CSS</span><span>85%</span></div>
-              <div class="progress" role="progressbar" aria-label="CSS" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-primary" data-valor="85" style="width:0%"></div>
-              </div>
-            </div>
-
-            <div class="mb-4">
-              <div class="d-flex justify-content-between"><span class="fw-semibold">JavaScript</span><span>75%</span></div>
-              <div class="progress" role="progressbar" aria-label="JavaScript" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-warning" data-valor="75" style="width:0%"></div>
-              </div>
-            </div>
-
-            <div class="mb-4">
-              <div class="d-flex justify-content-between"><span class="fw-semibold">PHP</span><span>70%</span></div>
-              <div class="progress" role="progressbar" aria-label="PHP" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-secondary" data-valor="70" style="width:0%"></div>
-              </div>
-            </div>
-
-            <div class="mb-4">
-              <div class="d-flex justify-content-between"><span class="fw-semibold">MySQL</span><span>70%</span></div>
-              <div class="progress" role="progressbar" aria-label="MySQL" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-info" data-valor="70" style="width:0%"></div>
-              </div>
-            </div>
-
+            </article>
           </div>
         </div>
       </div>
     </section>
 
-          <!-- Columna derecha: Redes, herramientas y entorno de desarrollo -->
-          <div class="col-12 col-md-6">
-            <h4 class="mb-4 fw-semibold"><i class="bi bi-tools text-primary me-2"></i>Herramientas & Redes</h4>
-            
-            <div class="card p-4 shadow-sm border-0 bg-light">
-              <p class="text-muted mb-3">Otras tecnologías y herramientas con las que trabajo diariamente:</p>
-              
-              <!-- Badges informativos de herramientas -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Habilidades técnicas</h2>
+        <p class="section-sub">Nivel de dominio en las tecnologías que utilizo.</p>
+        <div class="row g-5">
+          <div class="col-12 col-lg-6" id="listaSkills">
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-1"><span class="fw-semibold">HTML</span><span class="text-body-secondary">90%</span></div>
+              <div class="progress" role="progressbar" aria-label="HTML" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" data-valor="90" style="width:0%"></div></div>
+            </div>
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-1"><span class="fw-semibold">CSS</span><span class="text-body-secondary">85%</span></div>
+              <div class="progress" role="progressbar" aria-label="CSS" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" data-valor="85" style="width:0%"></div></div>
+            </div>
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-1"><span class="fw-semibold">JavaScript</span><span class="text-body-secondary">75%</span></div>
+              <div class="progress" role="progressbar" aria-label="JavaScript" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" data-valor="75" style="width:0%"></div></div>
+            </div>
+            <div class="mb-4">
+              <div class="d-flex justify-content-between mb-1"><span class="fw-semibold">PHP</span><span class="text-body-secondary">70%</span></div>
+              <div class="progress" role="progressbar" aria-label="PHP" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" data-valor="70" style="width:0%"></div></div>
+            </div>
+            <div>
+              <div class="d-flex justify-content-between mb-1"><span class="fw-semibold">MySQL</span><span class="text-body-secondary">70%</span></div>
+              <div class="progress" role="progressbar" aria-label="MySQL" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><div class="progress-bar" data-valor="70" style="width:0%"></div></div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <h3 class="h5 mb-3"><i class="bi bi-tools me-2 text-accent"></i>Herramientas y redes</h3>
+            <div class="card tools p-4">
+              <p class="text-body-secondary mb-3">Tecnologías y herramientas con las que trabajo a diario:</p>
               <div class="d-flex flex-wrap gap-2">
-                <span class="badge bg-dark p-2"><i class="bi bi-terminal me-1"></i>Linux (Arch / Omarchy)</span>
-                <span class="badge bg-secondary p-2"><i class="bi bi-git me-1"></i>Git & GitHub</span>
-                <span class="badge bg-primary p-2"><i class="bi bi-diagram-3 me-1"></i>Redes & Subnetting IPv4</span>
-                <span class="badge bg-danger p-2"><i class="bi bi-cpu me-1"></i>VMware / EVE-NG</span>
-                <span class="badge bg-success p-2"><i class="bi bi-filetype-pdf me-1"></i>LaTeX</span>
-                <span class="badge bg-info text-dark p-2"><i class="bi bi-box-seam me-1"></i>Vite & AJAX</span>
+                <span class="tag"><i class="bi bi-terminal me-1"></i>Linux (Arch / Omarchy)</span>
+                <span class="tag"><i class="bi bi-git me-1"></i>Git y GitHub</span>
+                <span class="tag"><i class="bi bi-diagram-3 me-1"></i>Redes y subnetting IPv4</span>
+                <span class="tag"><i class="bi bi-cpu me-1"></i>VMware / EVE-NG</span>
+                <span class="tag"><i class="bi bi-filetype-pdf me-1"></i>LaTeX</span>
+                <span class="tag"><i class="bi bi-box-seam me-1"></i>Vite y AJAX</span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Sección de Contacto -->
-    <section id="contacto" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-4 fw-bold text-primary">Contacto</h2>
-        <p class="text-center text-muted mb-5">
-          ¿Tienes algún proyecto en mente o consulta académica? ¡Escríbeme!
-        </p>
 
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8 col-lg-6">
-            <form action="#" method="POST" class="card p-4 shadow-sm border-0">
-              
-              <!-- Campo Nombre -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <p class="section-sub">¿Tienes un proyecto en mente o una consulta académica? Escríbeme.</p>
+        <div class="row">
+          <div class="col-12 col-lg-8 col-xl-6">
+            <form id="formContacto" class="card tools p-4">
               <div class="mb-3">
                 <label for="nombre" class="form-label fw-semibold">Nombre completo</label>
                 <div class="input-group">
                   <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
-                  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required />
                 </div>
               </div>
-
-              <!-- Campo Email -->
               <div class="mb-3">
                 <label for="email" class="form-label fw-semibold">Correo electrónico</label>
                 <div class="input-group">
                   <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
-                  <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com" required />
                 </div>
               </div>
-
-              <!-- Campo Asunto -->
               <div class="mb-3">
                 <label for="asunto" class="form-label fw-semibold">Asunto</label>
-                <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Motivo de tu mensaje" required>
+                <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Motivo de tu mensaje" required />
               </div>
-
-              <!-- Campo Mensaje -->
               <div class="mb-4">
                 <label for="mensaje" class="form-label fw-semibold">Mensaje</label>
                 <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
               </div>
-
-              <!-- Botón de Envío -->
-              <button type="submit" class="btn btn-primary btn-lg w-100 fw-semibold">
-                <i class="bi bi-send-fill me-2"></i>Enviar Mensaje
-              </button>
+              <button type="submit" class="btn btn-accent btn-lg w-100"><i class="bi bi-send-fill me-2"></i>Enviar mensaje</button>
             </form>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Pie de página (Footer) -->
-    <footer class="bg-dark text-white text-center py-4">
+    <footer class="site-footer text-center py-4">
       <div class="container">
         <div class="d-flex justify-content-center gap-4 mb-3 fs-4">
-          <a href="https://github.com/Odessty" target="_blank" class="text-white text-decoration-none"><i class="bi bi-github"></i></a>
-          <a href="https://linkedin.com" target="_blank" class="text-white text-decoration-none"><i class="bi bi-linkedin"></i></a>
-          <a href="mailto:tu-correo@ejemplo.com" class="text-white text-decoration-none"><i class="bi bi-envelope"></i></a>
+          <a href="https://github.com/Odessty" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://linkedin.com/in/TU-PERFIL" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="mailto:tu-correo@ejemplo.com" aria-label="Correo"><i class="bi bi-envelope"></i></a>
         </div>
-        <p class="mb-0 text-secondary">&copy; 2026 Sebastián Medina. Todos los derechos reservados.</p>
+        <p class="mb-0 text-body-secondary">&copy; 2026 Sebastián Medina. Todos los derechos reservados.</p>
       </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
-
