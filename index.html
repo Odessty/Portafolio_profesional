@@ -32,7 +32,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav-ms-auto">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="#hero">Inicio</a>
             </li>
@@ -67,7 +67,8 @@
 
             <h1 class="display-4 fw-bold">Sebastián Medina</h1>
             <p class="lead mb-4">
-              Estudiante de Ingeniería en TI | Desarrollador Software Junior | Aficionado de la ciberseguridad
+              Estudiante de Ingeniería en TI | Desarrollador Software Junior |
+              Aficionado de la ciberseguridad
             </p>
 
             <!-- Botones de llamada a la acción con Flexbox -->
@@ -90,6 +91,98 @@
         </div>
       </div>
     </header>
+    <!-- Sección de Portafolio de Proyectos -->
+    <section id="proyectos" class="py-5">
+      <div class="container">
+        <!-- Título de la sección -->
+        <h2 class="text-center mb-5 fw-bold text-primary">
+          Proyectos Destacados
+        </h2>
+
+        <!-- Sistema de grillas (row) con espacio entre elementos (g-4) -->
+        <div class="row g-4">
+          <!-- Proyecto 1: Sistema POS -->
+          <div class="col-12 col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="assets/project1.jpg"
+                class="card-img-top"
+                alt="Sistema POS"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">
+                  Sistema de Punto de Venta (POS)
+                </h5>
+                <p class="card-text text-muted flex-grow-1">
+                  Aplicación web para control de inventarios, gestión de
+                  clientes y registro de ventas en tiempo real.
+                </p>
+                <div class="mb-3">
+                  <span class="badge bg-primary">PHP</span>
+                  <span class="badge bg-secondary">MySQL</span>
+                  <span class="badge bg-info text-dark">Bootstrap</span>
+                </div>
+                <a href="#" class="btn btn-outline-primary mt-auto"
+                  >Ver detalles</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2: Malla Curricular Interactiva -->
+          <div class="col-12 col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="assets/project2.jpg"
+                class="card-img-top"
+                alt="Malla Interactiva"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Malla Curricular Interactiva</h5>
+                <p class="card-text text-muted flex-grow-1">
+                  Dashboard web responsivo adaptado para dispositivos móviles
+                  que permite rastrear asignaturas y prerrequisitos.
+                </p>
+                <div class="mb-3">
+                  <span class="badge bg-warning text-dark">JavaScript</span>
+                  <span class="badge bg-danger">HTML5</span>
+                  <span class="badge bg-primary">CSS3</span>
+                </div>
+                <a href="#" class="btn btn-outline-primary mt-auto"
+                  >Ver detalles</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3: CRUD de Registro y Préstamos -->
+          <div class="col-12 col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="assets/project3.jpg"
+                class="card-img-top"
+                alt="CRUD de Biblioteca"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">CRUD Gestión de Préstamos</h5>
+                <p class="card-text text-muted flex-grow-1">
+                  Módulo web interactivo para registro de usuarios y préstamos
+                  con persistencia local e integración AJAX.
+                </p>
+                <div class="mb-3">
+                  <span class="badge bg-success">TypeScript</span>
+                  <span class="badge bg-dark">AJAX</span>
+                  <span class="badge bg-info text-dark">Bootstrap</span>
+                </div>
+                <a href="#" class="btn btn-outline-primary mt-auto"
+                  >Ver detalles</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
